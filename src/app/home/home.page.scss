@@ -1,3 +1,9 @@
+.homeWrapper {
+  padding: 15%;
+  background: #fefefe;
+  height: 100%;
+}
+
 h1 {
   font-family: "Playful";
   font-size: 36px;
@@ -6,8 +12,9 @@ h1 {
 
 .whatsOpen {
   font-family: "Playful";
-  font-size: 14px;
+  font-size: 16px;
   color: #DBD5D2;
+  margin-top: -5px;
 }
 
 h3 {
@@ -21,7 +28,7 @@ h4 {
   font-size: 16px;
   color: #C9A09D;
   text-decoration: underline;
-padding-top: 2%;
+  padding-top: 2%;
   margin-left: 30%;
 }
 
@@ -31,24 +38,20 @@ padding-top: 2%;
   white-space: nowrap;
 }
 
-.homeWrapper {
-  padding: 10%;
-}
-
 .floatiesWrapper {
   display: block;
-  height: 100px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-right: -20%;
 }
 
 .floaties {
-  height: 100px;
-  width: 100px;
-  border-radius: 30px;
+  height: 120px;
+  width: 120px;
+  border-radius: 40px;
   display: inline-block;
-  margin-right: 5%;
+  margin-right: 10%;
+  margin-top: 10%;
+  box-shadow: 0px 0px 5px #d1d1d1;
 }
 
 .one{
@@ -63,35 +66,93 @@ padding-top: 2%;
     background-color: #FDF1E5;
 }
 
-.oneCircle {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: #EDD9D3;
-  display: block;
-  position: absolute;
-  margin-left: 20%;
-  margin-top: -10%;
+.four {
+  background-color: #fff1d6;
 }
 
-.twoCircle {
-  height: 40px;
-  width: 40px;
+.oneCircle {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background: #EDD9D3;
   display: block;
   position: absolute;
-  margin-left: 60%;
-  margin-top: -10%;
+  margin-left: 23%;
+  margin-top: 5%;
+  font-size: 32px;
+  box-shadow: -1px -1px 5px #d1d1d1;
+
+}
+
+.oneCircle:active {
+  transform: translateY(4px);
 }
 
 .arrow {
-  margin-left: 30%;
-  margin-top: 30%;
   color: #FFF;
+  margin: 17%;
 }
 
-.shopOne {
-  color: blue;
-  position: absolute;
+.boxText {
+  color: #8E8E8E;
+  display: block;
+  text-align: center;
+  padding-top: 35%;
+  font-family: "Raleway"
+}
+
+.shopOneInfo {
+  color: #8E8E8E;
+  display: block;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 10px;
+  font-family: "Raleway"
+}
+
+// .shopTwo {
+//   color: #8E8E8E;
+//   display: block;
+//   text-align: center;
+//   padding-top: 40%;
+//   font-family: "Raleway"
+// }
+//
+// .shopThree {
+//   color: #8E8E8E;
+//   display: block;
+//   text-align: center;
+//   padding-top: 40%;
+//   font-family: "Raleway"
+// }
+//
+// .shopFour {
+//   color: #8E8E8E;
+//   display: block;
+//   text-align: center;
+//   padding-top: 40%;
+//   font-family: "Raleway"
+// }
+
+.search {
+  color: #DDADAD;
+  padding-top: 10%;
+  margin-left: 30%;
+  font-size: 30px;
+}
+
+.searchBox {
+  margin-left: -4%;
+  margin-top: 3%;
+  margin-right: -2%;
+  margin-bottom: 29px;
+  width: 155%;
+}
+
+.searchBack {
+  color: #DDADAD;
+  padding-top: 10%;
+  font-size: 65px;
+  margin-top: -20px;
+  margin-left: -3%;
 }

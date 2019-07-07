@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  searchMode: boolean;
 
   constructor() {}
 
+  searchTrigger(){
+    if(this.searchMode){
+      this.searchMode = false
+    }else{
+      this.searchMode = true;
+    }
+  }
 }
