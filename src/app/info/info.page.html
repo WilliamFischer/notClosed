@@ -3,13 +3,16 @@
   <h1>We are open.</h1>
 
   <div class="circleCube">
-    <ion-icon name="arrow-round-forward"></ion-icon>
+    <ion-icon *ngIf="emptyInput" name="remove"></ion-icon>
+    <ion-icon *ngIf="!emptyInput" (click)="goHome()" name="arrow-round-forward"></ion-icon>
   </div>
 
   <div class="bottomSquare">
     <h2 class="topTitleWhatText">What is notClosed?</h2>
     <p class="openStores">Not Closed provides a simple list of all stores near your location that are currently open :)</p>
-    <input type="text" name="location" class="searchLoc" placeholder="Your Location">
+    <form action=".">
+      <input type="text" (change)="getLocation($event)"  name="location" class="searchLoc" placeholder="Your Location">
+    </form>
     <br /><br />
   </div>
 </div>
