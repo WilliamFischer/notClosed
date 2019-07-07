@@ -3,26 +3,73 @@
   height: 70%;
   position: absolute;
   display: block;
-  background: url(https://images.unsplash.com/photo-1542211183455-2afe6f173cdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80);
+  background: url(https://images.unsplash.com/photo-1501566953613-d93d5cb0be93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1528&q=80);
   background-size: cover;
   background-position: top right;
 }
 
 h1{
-  font-size: 36px;
-  color: black;
-  font-family: playfairDisplay;
+  font-size: 46px;
+  color: #fff;
   margin: 15%;
   margin-top: 20%;
   width: 50%;
+  text-shadow: 1px 1px #4AB2C3;
+  text-transform: uppercase;
 }
 
 .bottomSquare{
   width: 100%;
   height: 400px;
   background: #fff;
-  margin-top: 90%;
+  margin-top: 50%;
   display: block;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
+}
+
+.circleCube{
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  background: #4AB2C3;
+  display: block;
+  position: absolute;
+  left: 65%;
+  margin-top: 25%;
+  text-align: center;
+  line-height: 18vh;
+  color: #fff;
+  box-shadow: 0px 5px 20px #4AB2C3;
+
+  ion-icon{
+    font-size: 54px;
+  }
+}
+
+.topTitleWhatText{
+  margin-left: 10%;
+  padding-top: 15%;
+  font-family: 'Playful';
+  color: #8e8e8e;
+}
+
+.searchLoc{
+  border: 1px solid #d3d3d3;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-top: 10%;
+  width: 70%;
+  padding: 4%;
+}
+
+.openStores{
+  text-align: center;
+  color: #d3d3d3;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 7%;
 }
