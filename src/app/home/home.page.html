@@ -1,19 +1,58 @@
 <div class="homeWrapper">
 
-  <h1> notClosed.</h1>
-  <h5 class="whatsOpen"> What's open near me? </h5>
+  <div class="line" *ngIf="!searchMode">
+    <h1> notClosed.</h1>
+    <ion-icon name="search" class="search" (click)="searchTrigger()"></ion-icon>
+  </div>
+
+  <div class="line" *ngIf="searchMode">
+    <ion-searchbar animated placeholder="search stores" class="searchBox"></ion-searchbar>
+    <ion-icon name="close" class="searchBack" (click)="searchTrigger()"></ion-icon>
+  </div>
+
+
+  <h5 class="whatsOpen" *ngIf="!searchMode"> What's open near me? </h5>
+
   <div class="line">
     <h3> Open stores </h3>
       <h4> See More </h4>
   </div>
 
   <div class="floatiesWrapper">
-    <div class="floaties one"> <label class="shopOne"> 7/11 </label></div> <div class="oneCircle">
-      <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+
+  <!-- float one  -->
+    <div class="floaties one">
+      <label class="boxText"> 7/11 </label>
+      <label class="shopOneInfo"> open until 10 </label>
+      <div class="oneCircle">
+        <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+      </div>
     </div>
-    <div class="floaties two"></div> <div class="twoCircle">
-      <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+<!-- float two  -->
+    <div class="floaties two">
+      <label class="boxText"> Subway </label>
+      <label class="shopOneInfo"> Ospen until 12 </label>
+      <div class="oneCircle">
+        <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+      </div>
     </div>
-    <div class="floaties three"></div> <div class="threeCircle"> </div>
-  </div>
+
+  <!-- float three -->
+      <div class="floaties three">
+        <label class="boxText"> KFC </label>
+        <label class="shopOneInfo"> open until 9 </label>
+
+        <div class="oneCircle">
+          <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+        </div>
+      </div>
+      <!-- float four -->
+          <div class="floaties four">
+            <label class="boxText"> McDonalds </label>
+            <label class="shopOneInfo"> not closing </label>
+
+            <div class="oneCircle">
+              <ion-icon name="arrow-round-forward" class="arrow"></ion-icon>
+        </div>
+    </div>
 </div>
