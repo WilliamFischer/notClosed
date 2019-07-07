@@ -1,1 +1,97 @@
+h1 {
+  font-family: "Playful";
+  font-size: 36px;
+  color: #625855;
+}
 
+.whatsOpen {
+  font-family: "Playful";
+  font-size: 14px;
+  color: #DBD5D2;
+}
+
+h3 {
+  font-family: "Playful";
+  font-size: 24px;
+  color: #625855;
+}
+
+h4 {
+  font-family: "Playful";
+  font-size: 16px;
+  color: #C9A09D;
+  text-decoration: underline;
+padding-top: 2%;
+  margin-left: 30%;
+}
+
+.line {
+  display: inline-flex;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.homeWrapper {
+  padding: 10%;
+}
+
+.floatiesWrapper {
+  display: block;
+  height: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 10%;
+}
+
+.floaties {
+  height: 100px;
+  width: 100px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.one{
+    background-color: #FBF2F0;
+}
+
+.two{
+    background-color: #FBF9F5;
+}
+
+.three{
+    background-color: #FDF1E5;
+}
+
+.oneCircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #EDD9D3;
+  display: block;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: -10%;
+}
+
+.twoCircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #EDD9D3;
+  display: block;
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -10%;
+}
+
+.arrow {
+  margin-left: 30%;
+  margin-top: 30%;
+  color: #FFF;
+}
+
+.shopOne {
+  color: blue;
+  position: absolute;
+}
