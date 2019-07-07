@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
 export class HomePage {
   searchMode: boolean;
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
   searchTrigger(){
     if(this.searchMode){
@@ -16,5 +19,9 @@ export class HomePage {
     }else{
       this.searchMode = true;
     }
+  }
+
+  goToInfo(){
+    this.router.navigateByUrl('/info');
   }
 }
