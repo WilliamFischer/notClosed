@@ -20,7 +20,7 @@
   <div class="floatiesWrapper animated fadeIn">
 
   <!-- float one  -->
-    <div class="floaties one">
+    <div class="floaties one" (click)="showShop('7/11')">
       <label class="boxText"> 7/11 </label>
       <label class="shopOneInfo"> open until 10 </label>
       <div class="oneCircle">
@@ -28,7 +28,7 @@
       </div>
     </div>
 <!-- float two  -->
-    <div class="floaties two">
+    <div class="floaties two" (click)="showShop('Subway')">
       <label class="boxText"> Subway </label>
       <label class="shopOneInfo"> Ospen until 12 </label>
       <div class="oneCircle">
@@ -37,7 +37,7 @@
     </div>
 
   <!-- float three -->
-      <div class="floaties three">
+      <div class="floaties three" (click)="showShop('KFC')">
         <label class="boxText"> KFC </label>
         <label class="shopOneInfo"> open until 9 </label>
 
@@ -46,7 +46,7 @@
         </div>
       </div>
       <!-- float four -->
-          <div class="floaties four">
+          <div class="floaties four" (click)="showShop('McDonalds')">
             <label class="boxText"> McDonalds </label>
             <label class="shopOneInfo"> not closing </label>
 
@@ -55,9 +55,14 @@
         </div>
     </div>
 
-    <ion-icon name="arrow-dropup" class="scroll"></ion-icon>
-    <ion-icon name="arrow-dropdown" class="scroll down"></ion-icon>
+    <ion-icon name="arrow-dropup" class="scroll" (click)="upClick()"></ion-icon>
+    <ion-icon name="arrow-dropdown" class="scroll down "(click)="dowmClick()"></ion-icon>
 
     <h4 (click)="goToInfo()"> Change Location </h4>
 
+
+    <div class="shopSelect animated slideInUp" *ngIf="shop">
+      <ion-icon name="remove" class="downArrow" (click)="showShop()"></ion-icon>
+      <label class="headerShop"> {{shop}} </label>
+    </div>
 </div>

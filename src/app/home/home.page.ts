@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
   searchMode: boolean;
+  shop: string;
 
   constructor(
     private router: Router
@@ -23,5 +24,15 @@ export class HomePage {
 
   goToInfo(){
     this.router.navigateByUrl('/info');
+  }
+
+  showShop(shop) {
+    console.log(shop);
+    if(!this.shop){
+      this.shop = shop
+    }else{
+      this.shop = ''
+    }
+
   }
 }
